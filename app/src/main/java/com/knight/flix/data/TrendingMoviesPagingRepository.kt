@@ -1,8 +1,8 @@
 package com.knight.flix.data
 
-import android.arch.lifecycle.LiveData
-import android.arch.paging.LivePagedListBuilder
-import android.arch.paging.PagedList
+import androidx.lifecycle.LiveData
+import androidx.paging.LivePagedListBuilder
+import androidx.paging.PagedList
 import com.knight.flix.reactivex.Schedulers
 import com.knight.flix.ui.model.Movie
 import io.reactivex.disposables.CompositeDisposable

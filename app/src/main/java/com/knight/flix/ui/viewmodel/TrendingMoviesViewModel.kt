@@ -1,10 +1,10 @@
 package com.knight.flix.ui.viewmodel
 
-import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.LiveDataReactiveStreams
-import android.arch.lifecycle.MutableLiveData
-import android.arch.lifecycle.ViewModel
-import android.arch.paging.PagedList
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.LiveDataReactiveStreams
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.paging.PagedList
 import com.knight.flix.data.ConfigurationRepository
 import com.knight.flix.data.TrendingMoviesRepository
 import com.knight.flix.api.model.TrendingMoviePage

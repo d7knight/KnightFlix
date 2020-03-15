@@ -1,6 +1,6 @@
 package com.knight.flix.data
 
-import android.arch.paging.ItemKeyedDataSource
+import androidx.paging.ItemKeyedDataSource
 import com.knight.flix.reactivex.Schedulers
 import com.knight.flix.ui.model.Movie
 import io.reactivex.disposables.CompositeDisposable

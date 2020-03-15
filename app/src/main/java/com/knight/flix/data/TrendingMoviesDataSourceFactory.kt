@@ -1,7 +1,7 @@
 package com.knight.flix.data
 
-import android.arch.lifecycle.MutableLiveData
-import android.arch.paging.DataSource
+import androidx.lifecycle.MutableLiveData
+import androidx.paging.DataSource
 import com.knight.flix.reactivex.Schedulers
 import com.knight.flix.ui.model.Movie
 import io.reactivex.disposables.CompositeDisposable

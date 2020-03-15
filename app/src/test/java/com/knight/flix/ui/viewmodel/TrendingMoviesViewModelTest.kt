@@ -1,8 +1,8 @@
 package com.knight.flix.ui.viewmodel
 
-import android.arch.lifecycle.LiveData
-import android.arch.paging.DataSource
-import android.arch.paging.PagedList
+import androidx.lifecycle.LiveData
+import androidx.paging.DataSource
+import androidx.paging.PagedList
 import com.knight.flix.data.TrendingMoviesPagingRepository
 import com.knight.flix.ui.model.Movie
 import com.knight.flix.ui.provider.SearchQueryProvider
@@ -13,7 +13,7 @@ import com.nhaarman.mockitokotlin2.then
 import com.nhaarman.mockitokotlin2.willReturn
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
-import android.arch.core.executor.testing.InstantTaskExecutorRule
+import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import io.reactivex.Observable
 import org.junit.Rule
 import org.mockito.junit.MockitoJUnit

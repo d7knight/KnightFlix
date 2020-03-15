@@ -1,11 +1,11 @@
 package com.knight.flix.ui
 
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProvider
-import android.support.v7.app.AppCompatActivity
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.DefaultItemAnimator
-import android.support.v7.widget.GridLayoutManager
+import androidx.recyclerview.widget.DefaultItemAnimator
+import androidx.recyclerview.widget.GridLayoutManager
 import com.knight.flix.R
 import com.knight.flix.application.KnightFlixApplication
 import com.knight.flix.injection.TrendingMoviesActivitySubcomponent
@@ -13,7 +13,7 @@ import com.knight.flix.ui.adapter.TrendingMoviesAdapter
 import com.knight.flix.ui.viewmodel.TrendingMoviesViewModel
 import kotlinx.android.synthetic.main.trending_movies_activity.*
 import javax.inject.Inject
-import android.support.v7.widget.SearchView
+import androidx.appcompat.widget.SearchView
 import android.view.Menu
 
 private const val GRID_SPAN_COUNT = 3
@@ -72,7 +72,10 @@ class TrendingMoviesActivity : AppCompatActivity() {
     private fun setupTrendingMoviesRecyclerView() {
         trendingMoviesRecycler.apply {
             adapter = trendingMoviesAdapter
-            layoutManager = GridLayoutManager(context, GRID_SPAN_COUNT)
+            layoutManager = GridLayoutManager(
+                context,
+                GRID_SPAN_COUNT
+            )
             itemAnimator = DefaultItemAnimator()
         }
     }

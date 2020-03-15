@@ -1,7 +1,7 @@
 package com.knight.flix.ui
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.knight.flix.R
 import kotlinx.android.synthetic.main.movie_detail_activity.*

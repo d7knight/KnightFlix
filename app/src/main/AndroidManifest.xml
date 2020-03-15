@@ -21,7 +21,7 @@
         </activity>
         <activity
                 android:name="com.knight.flix.ui.MovieDetailActivity"
-                android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+                android:theme="@style/Theme.AppCompat.NoActionBar"
                 android:value="com.knight.flix.ui.TrendingMoviesActivity">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"

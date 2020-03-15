@@ -2,21 +2,13 @@ package com.knight.flix.ui.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.LiveDataReactiveStreams
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.paging.PagedList
-import com.knight.flix.data.ConfigurationRepository
-import com.knight.flix.data.TrendingMoviesRepository
-import com.knight.flix.api.model.TrendingMoviePage
 import com.knight.flix.data.TrendingMoviesPagingRepository
-import com.knight.flix.reactivex.Schedulers
 import com.knight.flix.ui.model.Movie
 import com.knight.flix.ui.provider.SearchQueryProvider
 import io.reactivex.BackpressureStrategy
 import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.rxkotlin.addTo
-import io.reactivex.rxkotlin.subscribeBy
-import timber.log.Timber
 import javax.inject.Inject
 
 class TrendingMoviesViewModel @Inject constructor(

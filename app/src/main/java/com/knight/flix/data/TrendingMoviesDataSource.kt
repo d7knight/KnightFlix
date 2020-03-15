@@ -14,7 +14,6 @@ class TrendingMoviesDataSource(
     private val schedulers: Schedulers
 ) : ItemKeyedDataSource<Int, Movie>() {
     override fun loadBefore(params: LoadParams<Int>, callback: LoadCallback<Movie>) {
-
     }
 
     override fun loadInitial(params: LoadInitialParams<Int>, callback: LoadInitialCallback<Movie>) {
@@ -39,12 +38,10 @@ class TrendingMoviesDataSource(
                     callback.onResult(it.movies)
                 }, onError = {
                     Timber.e(it, "Error loading next page $nextPage!")
-
                 }).addTo(compositeDisposable)
     }
 
     override fun getKey(item: Movie): Int {
         return item.pageNumber
     }
-
 }

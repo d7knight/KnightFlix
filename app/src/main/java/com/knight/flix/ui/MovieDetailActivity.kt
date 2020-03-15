@@ -6,7 +6,6 @@ import com.bumptech.glide.Glide
 import com.knight.flix.R
 import kotlinx.android.synthetic.main.movie_detail_activity.*
 
-
 class MovieDetailActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

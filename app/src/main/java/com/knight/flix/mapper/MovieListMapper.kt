@@ -29,6 +29,5 @@ class MovieListMapper @Inject constructor() {
             totalCount = trendingMoviePage.totalResults,
             position = (trendingMoviePage.page - 1) * trendingMoviePage.trendingMovieList.size
         )
-
     }
 }

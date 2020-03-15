@@ -1,9 +1,9 @@
 package com.knight.flix.ui.adapter
 
-import androidx.paging.PagedListAdapter
-import androidx.recyclerview.widget.DiffUtil
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.paging.PagedListAdapter
+import androidx.recyclerview.widget.DiffUtil
 import com.knight.flix.R
 import com.knight.flix.ui.model.Movie
 

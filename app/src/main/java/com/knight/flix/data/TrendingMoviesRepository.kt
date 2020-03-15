@@ -26,7 +26,6 @@ class TrendingMoviesRepository @Inject constructor(
             Pair(configuration, query)
         }.firstOrError()
             .flatMap { getTrendingMovies(configuration = it.first, pageNumber = pageNumber, query = it.second) }
-
     }
 
     private fun getTrendingMovies(
@@ -42,5 +41,4 @@ class TrendingMoviesRepository @Inject constructor(
             movieListMapper.mapToMovieCollection(configuration, it)
         }
     }
-
 }

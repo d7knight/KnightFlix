@@ -1,9 +1,11 @@
 package com.knight.flix.ui
 
+import android.os.Bundle
+import android.view.Menu
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.GridLayoutManager
 import com.knight.flix.R
@@ -11,10 +13,8 @@ import com.knight.flix.application.KnightFlixApplication
 import com.knight.flix.injection.TrendingMoviesActivitySubcomponent
 import com.knight.flix.ui.adapter.TrendingMoviesAdapter
 import com.knight.flix.ui.viewmodel.TrendingMoviesViewModel
-import kotlinx.android.synthetic.main.trending_movies_activity.*
 import javax.inject.Inject
-import androidx.appcompat.widget.SearchView
-import android.view.Menu
+import kotlinx.android.synthetic.main.trending_movies_activity.*
 
 private const val GRID_SPAN_COUNT = 3
 
@@ -53,9 +53,9 @@ class TrendingMoviesActivity : AppCompatActivity() {
         val searchQueryLiveData = trendingMoviesViewModel.observeSearchQuery()
         val searchQueryObserver = Observer<String> {
             searchQueryLiveData.removeObservers(this)
-            myActionMenuItem.expandActionView();
-            searchView.setQuery(it, true);
-            searchView.clearFocus();
+            myActionMenuItem.expandActionView()
+            searchView.setQuery(it, true)
+            searchView.clearFocus()
         }
         searchQueryLiveData.observe(this, searchQueryObserver)
         return true
@@ -66,7 +66,6 @@ class TrendingMoviesActivity : AppCompatActivity() {
             .observe(this, Observer {
                 trendingMoviesAdapter.submitList(it)
             })
-
     }
 
     private fun setupTrendingMoviesRecyclerView() {

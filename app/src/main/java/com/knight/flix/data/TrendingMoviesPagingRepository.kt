@@ -30,5 +30,4 @@ class TrendingMoviesPagingRepository @Inject constructor(
             .build()
         return LivePagedListBuilder<Int, Movie>(trendingMoviesDataSourceFactory, pagedListConfig).build()
     }
-
 }

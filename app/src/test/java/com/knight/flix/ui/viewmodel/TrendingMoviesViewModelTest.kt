@@ -1,5 +1,6 @@
 package com.knight.flix.ui.viewmodel
 
+import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.LiveData
 import androidx.paging.DataSource
 import androidx.paging.PagedList
@@ -11,14 +12,12 @@ import com.nhaarman.mockitokotlin2.given
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.then
 import com.nhaarman.mockitokotlin2.willReturn
-import org.assertj.core.api.Assertions.assertThat
-import org.junit.Test
-import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import io.reactivex.Observable
+import org.assertj.core.api.Assertions.assertThat
 import org.junit.Rule
+import org.junit.Test
 import org.mockito.junit.MockitoJUnit
 import org.mockito.quality.Strictness
-
 
 class TrendingMoviesViewModelTest {
 
@@ -33,7 +32,7 @@ class TrendingMoviesViewModelTest {
     )
 
     @Test
-    fun observeTrendingMovies_shouldCallTrendingMoviesPagingRepository(){
+    fun observeTrendingMovies_shouldCallTrendingMoviesPagingRepository() {
         // When
         trendingMoviesViewModel.observeTrendingMovies()
 
@@ -42,7 +41,7 @@ class TrendingMoviesViewModelTest {
     }
 
     @Test
-    fun onQueryTextChange_givenObservingTrendingMovies_shouldUpdateSearchQueryProvider(){
+    fun onQueryTextChange_givenObservingTrendingMovies_shouldUpdateSearchQueryProvider() {
         // Given
         given { trendingMoviesPagingRepository.getWeeklyTrendingMovies(any()) } willReturn { mock() }
         trendingMoviesViewModel.observeTrendingMovies()
@@ -56,7 +55,7 @@ class TrendingMoviesViewModelTest {
     }
 
     @Test
-    fun observeSearchQuery_shouldObserveSearchQueryProvider(){
+    fun observeSearchQuery_shouldObserveSearchQueryProvider() {
         // Given
         val query = "query"
         given { searchQueryProvider.observeSearchQuery() } willReturn { Observable.just(query) }
@@ -69,7 +68,7 @@ class TrendingMoviesViewModelTest {
     }
 
     @Test
-    fun observeSearchQuery_givenSearchQueryProviderEmitsQuery_shouldUpdateSearchLiveData(){
+    fun observeSearchQuery_givenSearchQueryProviderEmitsQuery_shouldUpdateSearchLiveData() {
         // Given
         val query = "query"
         given { searchQueryProvider.observeSearchQuery() } willReturn { Observable.just(query) }
@@ -84,7 +83,7 @@ class TrendingMoviesViewModelTest {
     }
 
     @Test
-    fun onQueryTextChange_givengivenObservingTrendingMovies_shouldInvalidateDataSource(){
+    fun onQueryTextChange_givengivenObservingTrendingMovies_shouldInvalidateDataSource() {
         // Given
         val query = "query"
         val livedata = mock<LiveData<PagedList<Movie>>>()

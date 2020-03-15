@@ -21,11 +21,11 @@ class MovieViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
             .thumbnail(thumbnailRequest)
             .into(itemView.posterImage)
         itemView.setOnClickListener {
-            val intent =  Intent(itemView.context, MovieDetailActivity::class.java).apply {
+            val intent = Intent(itemView.context, MovieDetailActivity::class.java).apply {
                 putExtra(MovieDetailActivity.MOVIE_IMAGE_URL, movie.posterUrl)
                 putExtra(MovieDetailActivity.MOVIE_TITLE, movie.title)
             }
-            itemView.context.startActivity( intent)
+            itemView.context.startActivity(intent)
         }
     }
 }

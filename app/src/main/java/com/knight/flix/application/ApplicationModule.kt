@@ -8,8 +8,7 @@ import dagger.Provides
 class ApplicationModule {
 
     @Provides
-    internal fun provideResources(knightFlixApplication : KnightFlixApplication): Resources {
+    internal fun provideResources(knightFlixApplication: KnightFlixApplication): Resources {
         return knightFlixApplication.resources
     }
-
 }

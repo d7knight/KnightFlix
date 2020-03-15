@@ -6,9 +6,9 @@ import com.knight.flix.reactivex.Schedulers
 import io.reactivex.Observable
 import io.reactivex.rxkotlin.subscribeBy
 import io.reactivex.subjects.BehaviorSubject
-import timber.log.Timber
 import javax.inject.Inject
 import javax.inject.Singleton
+import timber.log.Timber
 
 @Singleton
 class ConfigurationRepository @Inject constructor(
@@ -34,5 +34,4 @@ class ConfigurationRepository @Inject constructor(
     fun observeConfiguration(): Observable<Configuration> {
         return subject.hide()
     }
-
 }

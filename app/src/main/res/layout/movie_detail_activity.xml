@@ -26,9 +26,18 @@
            android:layout_width="0dp"
            android:layout_height="0dp"
            android:scaleType="fitCenter"
-           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintBottom_toTopOf="@+id/openOnYouTubeButton"
            app:layout_constraintEnd_toEndOf="parent"
            app:layout_constraintStart_toStartOf="parent"
            app:layout_constraintTop_toBottomOf="@id/appbar" />
+
+   <Button
+           android:id="@+id/openOnYouTubeButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Open on Youtube"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

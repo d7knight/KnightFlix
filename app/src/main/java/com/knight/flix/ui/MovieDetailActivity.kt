@@ -14,6 +14,7 @@ class MovieDetailActivity : AppCompatActivity() {
         setContentView(R.layout.movie_detail_activity)
         loadImage()
         setTitle()
+        setupYoutubeButton()
     }
 
     private fun loadImage() {
@@ -28,6 +29,13 @@ class MovieDetailActivity : AppCompatActivity() {
         supportActionBar?.apply {
             title = intent.getStringExtra(MOVIE_TITLE)
             setDisplayHomeAsUpEnabled(true)
+        }
+    }
+
+    private fun setupYoutubeButton() {
+        openOnYouTubeButton.setOnClickListener {
+            val title = intent.getStringExtra(MOVIE_TITLE)
+            watchYoutubeVideos(query = title)
         }
     }
 

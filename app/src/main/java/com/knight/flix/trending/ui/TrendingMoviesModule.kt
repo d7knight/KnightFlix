@@ -1,7 +1,7 @@
-package com.knight.flix.ui
+package com.knight.flix.trending.ui
 
 import androidx.lifecycle.ViewModelProvider
-import com.knight.flix.ui.viewmodel.ViewModelFactory
+import com.knight.flix.trending.ui.viewmodel.ViewModelFactory
 import dagger.Module
 import dagger.Provides
 

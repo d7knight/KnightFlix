@@ -1,4 +1,4 @@
-package com.knight.flix.ui.viewmodel
+package com.knight.flix.trending.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

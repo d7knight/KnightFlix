@@ -1,12 +1,12 @@
-package com.knight.flix.ui.viewmodel
+package com.knight.flix.trending.ui.viewmodel
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.LiveData
 import androidx.paging.DataSource
 import androidx.paging.PagedList
 import com.knight.flix.data.TrendingMoviesPagingRepository
-import com.knight.flix.ui.model.Movie
-import com.knight.flix.ui.provider.SearchQueryProvider
+import com.knight.flix.trending.ui.model.Movie
+import com.knight.flix.trending.ui.provider.SearchQueryProvider
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.given
 import com.nhaarman.mockitokotlin2.mock

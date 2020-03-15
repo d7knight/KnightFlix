@@ -1,4 +1,4 @@
-package com.knight.flix.ui
+package com.knight.flix.detail.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

@@ -1,4 +1,4 @@
-package com.knight.flix.ui
+package com.knight.flix.trending.ui
 
 import android.os.Bundle
 import android.view.Menu
@@ -11,8 +11,8 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.knight.flix.R
 import com.knight.flix.application.KnightFlixApplication
 import com.knight.flix.injection.TrendingMoviesActivitySubcomponent
-import com.knight.flix.ui.adapter.TrendingMoviesAdapter
-import com.knight.flix.ui.viewmodel.TrendingMoviesViewModel
+import com.knight.flix.trending.ui.adapter.TrendingMoviesAdapter
+import com.knight.flix.trending.ui.viewmodel.TrendingMoviesViewModel
 import javax.inject.Inject
 import kotlinx.android.synthetic.main.trending_movies_activity.*
 

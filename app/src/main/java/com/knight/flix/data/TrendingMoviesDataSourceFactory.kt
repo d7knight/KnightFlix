@@ -3,7 +3,7 @@ package com.knight.flix.data
 import androidx.lifecycle.MutableLiveData
 import androidx.paging.DataSource
 import com.knight.flix.reactivex.Schedulers
-import com.knight.flix.ui.model.Movie
+import com.knight.flix.trending.ui.model.Movie
 import io.reactivex.disposables.CompositeDisposable
 
 class TrendingMoviesDataSourceFactory(

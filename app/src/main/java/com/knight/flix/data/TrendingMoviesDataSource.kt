@@ -2,7 +2,7 @@ package com.knight.flix.data
 
 import androidx.paging.ItemKeyedDataSource
 import com.knight.flix.reactivex.Schedulers
-import com.knight.flix.ui.model.Movie
+import com.knight.flix.trending.ui.model.Movie
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.rxkotlin.addTo
 import io.reactivex.rxkotlin.subscribeBy

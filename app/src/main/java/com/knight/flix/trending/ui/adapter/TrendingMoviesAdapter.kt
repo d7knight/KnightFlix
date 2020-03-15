@@ -1,11 +1,11 @@
-package com.knight.flix.ui.adapter
+package com.knight.flix.trending.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import com.knight.flix.R
-import com.knight.flix.ui.model.Movie
+import com.knight.flix.trending.ui.model.Movie
 
 class TrendingMoviesAdapter : PagedListAdapter<Movie, MovieViewHolder>(diffCallback) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {

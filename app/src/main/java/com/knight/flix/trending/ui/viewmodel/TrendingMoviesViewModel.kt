@@ -1,12 +1,12 @@
-package com.knight.flix.ui.viewmodel
+package com.knight.flix.trending.ui.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.LiveDataReactiveStreams
 import androidx.lifecycle.ViewModel
 import androidx.paging.PagedList
 import com.knight.flix.data.TrendingMoviesPagingRepository
-import com.knight.flix.ui.model.Movie
-import com.knight.flix.ui.provider.SearchQueryProvider
+import com.knight.flix.trending.ui.model.Movie
+import com.knight.flix.trending.ui.provider.SearchQueryProvider
 import io.reactivex.BackpressureStrategy
 import io.reactivex.disposables.CompositeDisposable
 import javax.inject.Inject

@@ -12,7 +12,7 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name="com.knight.flix.ui.TrendingMoviesActivity">
+        <activity android:name="com.knight.flix.trending.ui.TrendingMoviesActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,12 +20,12 @@
             </intent-filter>
         </activity>
         <activity
-                android:name="com.knight.flix.ui.MovieDetailActivity"
+                android:name="com.knight.flix.detail.ui.MovieDetailActivity"
                 android:theme="@style/Theme.AppCompat.NoActionBar"
-                android:value="com.knight.flix.ui.TrendingMoviesActivity">
+                android:value="com.knight.flix.trending.ui.TrendingMoviesActivity">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
-                    android:value="com.knight.flix.ui.TrendingMoviesActivity" />
+                    android:value="com.knight.flix.trending.ui.TrendingMoviesActivity" />
         </activity>
     </application>
 

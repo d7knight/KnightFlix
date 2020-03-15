@@ -3,8 +3,8 @@ package com.knight.flix.data
 import com.knight.flix.api.TrendingApi
 import com.knight.flix.api.model.Configuration
 import com.knight.flix.mapper.MovieListMapper
-import com.knight.flix.ui.model.MovieCollection
-import com.knight.flix.ui.provider.SearchQueryProvider
+import com.knight.flix.trending.ui.model.MovieCollection
+import com.knight.flix.trending.ui.provider.SearchQueryProvider
 import io.reactivex.Single
 import io.reactivex.rxkotlin.Observables
 import javax.inject.Inject

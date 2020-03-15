@@ -2,8 +2,8 @@ package com.knight.flix.mapper
 
 import com.knight.flix.api.model.Configuration
 import com.knight.flix.api.model.TrendingMoviePage
-import com.knight.flix.ui.model.Movie
-import com.knight.flix.ui.model.MovieCollection
+import com.knight.flix.trending.ui.model.Movie
+import com.knight.flix.trending.ui.model.MovieCollection
 import javax.inject.Inject
 
 private const val ORIGINAL_PATH_PARAM = "original"

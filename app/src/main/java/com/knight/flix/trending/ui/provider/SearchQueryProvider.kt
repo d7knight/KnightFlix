@@ -1,4 +1,4 @@
-package com.knight.flix.ui.provider
+package com.knight.flix.trending.ui.provider
 
 import io.reactivex.Observable
 import io.reactivex.subjects.BehaviorSubject

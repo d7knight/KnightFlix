@@ -1,4 +1,4 @@
-package com.knight.flix.ui
+package com.knight.flix.detail.ui
 
 import android.content.Context
 import android.content.Intent
